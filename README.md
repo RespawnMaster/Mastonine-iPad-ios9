@@ -124,23 +124,6 @@ killall -HUP SpringBoard
 
 ---
 
-## Technical Details
-
-| Property          | Value             |
-| ----------------- | ----------------- |
-| Language          | Objective-C       |
-| Framework         | UIKit             |
-| Build System      | Theos             |
-| Platform          | iOS 9.0+          |
-| Architecture      | armv7             |
-| Target Devices    | iPhone & iPad     |
-| Installation Path | `/Applications`   |
-| Authentication    | OAuth 2.0         |
-| API               | Mastodon REST API |
-| URL Scheme        | `mastonine://`    |
-
----
-
 ## Project Status
 
 🚧 **In Development**
