@@ -650,6 +650,18 @@
                                                                   userInfo:@{@"acct": acct}];
                 return;
             }
+        } else if ([foundURL rangeOfString:@"/@"].location != NSNotFound) {
+            NSRange atRange = [foundURL rangeOfString:@"/@"];
+            NSString *acct = [foundURL substringFromIndex:atRange.location + atRange.length];
+            NSRange queryRange = [acct rangeOfString:@"?"];
+            if (queryRange.location != NSNotFound) acct = [acct substringToIndex:queryRange.location];
+            acct = [acct stringByRemovingPercentEncoding] ?: acct;
+            if (acct.length > 0) {
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"MAMentionTapped"
+                                                                    object:nil
+                                                                  userInfo:@{@"acct": acct}];
+                return;
+            }
         }
 
         NSURL *linkAsURL = [NSURL URLWithString:foundURL];
