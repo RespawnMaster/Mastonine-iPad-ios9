@@ -1,0 +1,9 @@
+Package: com.mastonine.app
+Name: Mastonine
+Depends: mobilesubstrate
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: A full-featured Mastodon client for iOS 9 on iPad 3.
+Maintainer: Tyler Multifarious
+Author: Tyler Multifarious
+Section: Social

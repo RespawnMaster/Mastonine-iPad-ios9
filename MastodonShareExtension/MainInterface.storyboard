@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15F34" targetRuntime="AppleSDK" propertyAccessControl="none" useAutolayout="YES" initialViewController="j1y-V4-xli">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <share-extension id="j1y-V4-xli" userLabel="Share View Controller" customClass="MAShareViewController" modalTransitionStyle="crossDissolve">
+            <navigationBar key="navigationBar" contentMode="scaleToFill" id="QMs-YE-KsV"/>
+            <nil name="viewControllers"/>
+            <connections>
+                <segue destination="QMs-YE-KsV" kind="relationship" relationship="rootViewController" id="YIh-RX-BYb"/>
+            </connections>
+        </share-extension>
+    </scenes>
+</document>
