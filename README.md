@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="mastonine.png" width="150">
+</p>
+
 # Mastonine-iPad-iOS9
 
 > A native Mastodon client for jailbroken iOS 9 devices.
